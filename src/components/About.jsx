@@ -2,7 +2,7 @@ import React from 'react';
 import {GraduationCap,Award} from 'lucide-react';
 import {portfolioData} from '../data/portfolioData';
 
-const About = () => {
+const About =()=>{
   return (
     <section id="about" className="bg-opacity-50" style={{ background: 'var(--bg-color)' }}>
       <div className="container" data-aos="fade-up">
