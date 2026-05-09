@@ -1,5 +1,5 @@
 import React from 'react';
-import { Send, GitPullRequest, User, Mail, MessageSquare, ArrowRight } from 'lucide-react';
+import {Send,GitPullRequest, User, Mail, MessageSquare, ArrowRight } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 const Contact = () => {
