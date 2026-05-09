@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Award } from 'lucide-react';
+import {GraduationCap,Award } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 const About = () => {
