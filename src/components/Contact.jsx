@@ -1,90 +1,80 @@
 import React from 'react';
-import {Send,GitPullRequest,User,Mail,MessageSquare,ArrowRight} from 'lucide-react';
-import { portfolioData } from '../data/portfolioData';
+import { Mail, MapPin, Send } from 'lucide-react';
+import { GithubIcon, LinkedinIcon, TwitterIcon } from './SocialIcons';
 
 const Contact = () => {
   return (
     <section id="contact" className="relative py-24">
-      <div className="container" data-aos="fade-up">
-        <div className="grid lg:grid-cols-5 gap-16 items-start">
-          
-          {/* Contact Text Content (2/5) */}
-          <div className="lg:col-span-2 space-y-10">
-            <div className="space-y-6">
-              <h2 className="text-5xl md:text-6xl font-black tracking-tight leading-tight">
-                Let's <span className="text-transparent bg-clip-text" style={{ backgroundImage: 'linear-gradient(135deg, var(--accent-primary), var(--accent-secondary))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Collaborate</span> On Your Next Project
-              </h2>
-              <p className="text-lg opacity-70 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                I am currently open for full-time opportunities and freelance projects. Let's talk about how my analytical skills can help your business.
-              </p>
+      <div className="container relative z-10" data-aos="fade-up">
+        <div className="flex flex-col items-center mb-20">
+          <h2 className="section-title uppercase tracking-[0.3em] text-sm text-purple mb-4">Get In Touch</h2>
+          <h3 className="text-4xl md:text-5xl font-bold text-center">Let's Build Something</h3>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-16">
+          {/* Contact Info */}
+          <div className="space-y-10" data-aos="fade-right">
+            <div className="glass-card p-8 flex items-start gap-6 border-purple/10">
+              <div className="p-4 rounded-xl bg-purple/10 text-purple">
+                <Mail size={24} />
+              </div>
+              <div>
+                <h4 className="text-lg font-bold mb-1">Email Me</h4>
+                <p className="opacity-60">ahmad@example.com</p>
+              </div>
             </div>
 
-            <div className="space-y-4 pt-10 border-t" style={{ borderColor: 'var(--border-color)' }}>
-              <h3 className="text-xl font-bold flex items-center gap-2">
-                <MessageSquare className="text-accent-primary" size={24} /> 
-                Direct Contact
-              </h3>
-              <a href="mailto:ahmad@example.com" className="group flex items-center gap-4 text-2xl font-medium transition-all hover:translate-x-2">
-                ahmad@example.com
-                <div className="w-10 h-10 rounded-full border flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                  <ArrowRight size={20} />
-                </div>
-              </a>
+            <div className="glass-card p-8 flex items-start gap-6 border-purple/10">
+              <div className="p-4 rounded-xl bg-purple/10 text-purple">
+                <MapPin size={24} />
+              </div>
+              <div>
+                <h4 className="text-lg font-bold mb-1">Location</h4>
+                <p className="opacity-60">Karachi, Pakistan</p>
+              </div>
             </div>
 
-            <div className="flex gap-4">
-              {portfolioData.socials.map((social) => (
-                <a 
-                  key={social.name}
-                  href={social.link} 
-                  className="p-4 rounded-2xl glass border border-transparent hover:border-accent-primary transition-all group shadow-sm hover:shadow-lg"
-                  title={social.name}
-                >
-                  <social.icon size={22} className="group-hover:text-accent-primary transition-all" />
-                </a>
-              ))}
+            <div className="flex gap-6 pt-6 justify-center lg:justify-start">
+              <a href="#" className="w-12 h-12 glass rounded-xl flex items-center justify-center hover:text-purple hover:border-purple/50 transition-all"><GithubIcon size={20} /></a>
+              <a href="#" className="w-12 h-12 glass rounded-xl flex items-center justify-center hover:text-purple hover:border-purple/50 transition-all"><LinkedinIcon size={20} /></a>
+              <a href="#" className="w-12 h-12 glass rounded-xl flex items-center justify-center hover:text-purple hover:border-purple/50 transition-all"><TwitterIcon size={20} /></a>
             </div>
           </div>
 
-          {/* Contact Form (3/5) */}
-          <div className="lg:col-span-3">
-            <div className="card !p-10 lg:!p-16 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-blue-600 to-purple-600"></div>
-              
-              <form className="grid grid-cols-1 md:grid-cols-2 gap-8" onSubmit={(e) => e.preventDefault()}>
-                <div className="space-y-2">
-                  <label className="text-sm font-bold opacity-60 px-1">Full Name</label>
-                  <input 
-                    type="text" 
-                    className="w-full bg-transparent border-b-2 border-border-color py-4 focus:outline-none focus:border-accent-primary transition-colors font-medium text-lg" 
-                    placeholder="Enter your name"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-bold opacity-60 px-1">Email Address</label>
-                  <input 
-                    type="email" 
-                    className="w-full bg-transparent border-b-2 border-border-color py-4 focus:outline-none focus:border-accent-primary transition-colors font-medium text-lg" 
-                    placeholder="name@company.com"
-                  />
-                </div>
-                <div className="md:col-span-2 space-y-2">
-                  <label className="text-sm font-bold opacity-60 px-1">How can I help?</label>
-                  <textarea 
-                    rows="4" 
-                    className="w-full bg-transparent border-b-2 border-border-color py-4 focus:outline-none focus:border-accent-primary transition-colors font-medium text-lg resize-none" 
-                    placeholder="Tell me about your project..."
-                  ></textarea>
-                </div>
-                <div className="md:col-span-2 pt-6">
-                  <button className="btn btn-primary w-full md:w-auto px-12 py-5 text-xl">
-                    Get In Touch <Send size={22} />
-                  </button>
-                </div>
-              </form>
+          {/* Contact Form */}
+          <form className="space-y-6" data-aos="fade-left">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label className="text-xs font-mono uppercase tracking-widest opacity-60">Name</label>
+                <input 
+                  type="text" 
+                  placeholder="John Doe"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple focus:ring-1 focus:ring-purple/30 transition-all"
+                />
+              </div>
+              <div className="space-y-2">
+                <label className="text-xs font-mono uppercase tracking-widest opacity-60">Email</label>
+                <input 
+                  type="email" 
+                  placeholder="john@example.com"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple focus:ring-1 focus:ring-purple/30 transition-all"
+                />
+              </div>
             </div>
-          </div>
 
+            <div className="space-y-2">
+              <label className="text-xs font-mono uppercase tracking-widest opacity-60">Message</label>
+              <textarea 
+                rows="6"
+                placeholder="How can I help you?"
+                className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple focus:ring-1 focus:ring-purple/30 transition-all resize-none"
+              ></textarea>
+            </div>
+
+            <button type="button" className="btn-glow w-full flex items-center justify-center gap-3 py-4">
+              Send Message <Send size={18} />
+            </button>
+          </form>
         </div>
       </div>
     </section>

@@ -9,95 +9,105 @@ import {
   GitPullRequest,
   Mail,
   User,
-  GraduationCap
+  GraduationCap,
+  Cpu,
+  Layers,
+  Terminal,
+  Zap,
+  Microscope,
+  Workflow
 } from 'lucide-react';
 
 export const portfolioData = {
-  name: "Ahmad Hassan",
-  role: "Data Scientist & ML Enthusiast",
-  roles: ["Data Scientist", "ML Engineer", "Data Analyst", "Python Developer"],
-  intro: "Turning complex data into actionable insights. Passionate about building robust machine learning models and creating compelling data stories.",
+  name: "Ahmad Raza",
+  role: "Data Science Student",
+  roles: ["Data Scientist", "ML Engineer", "Data Analyst", "AI Enthusiast"],
+  intro: "Aspiring Data Scientist passionate about uncovering patterns in data and building intelligent systems that solve complex problems.",
   
   about: {
-    bio: "I am a Data Scientist with a strong foundation in statistical analysis and machine learning. I specialize in extracting meaningful patterns from large datasets to solve real-world problems. With experience in Python, SQL, and various data visualization tools, I thrive at the intersection of business and technology.",
+    bio: "I am a Data Science student with a deep interest in machine learning, statistical modeling, and data engineering. My journey is focused on bridging the gap between raw data and actionable intelligence. I thrive on building models that not only predict but explain the 'why' behind the numbers.",
+    journey: "Starting from a strong foundation in science at DJ Govt Science College, I transitioned into the world of Data Science at Muhammad Ali Jinnah University. My path is defined by constant learning and building.",
+    goals: "My ultimate goal is to become an expert AI Researcher, contributing to innovations that make technology more intuitive and data-driven.",
+    stats: [
+      { label: "Projects Completed", value: "12+" },
+      { label: "Skills Mastered", value: "25+" },
+      { label: "Learning Hours", value: "800+" },
+      { label: "Model Accuracy Avg", value: "92%" }
+    ],
     education: [
       {
-        degree: "Bachelor of Science in Data Science",
-        institution: "University of Excellence",
-        year: "2019 - 2023"
+        degree: "BS in Data Science",
+        institution: "Muhammad Ali Jinnah University (MAJU)",
+        year: "2022 - Present",
+        description: "Focusing on Machine Learning, Big Data Analytics, and Advanced Statistics."
       },
       {
-        degree: "Professional Certificate in Applied AI",
-        institution: "DataCamp",
-        year: "2023"
+        degree: "Intermediate in Pre-Engineering",
+        institution: "DJ Govt Science College",
+        year: "2020 - 2022",
+        description: "Strong foundation in Mathematics and Physics."
       }
     ]
   },
 
   skills: [
-    { name: "Python", icon: Code2, category: "Programming" },
-    { name: "SQL", icon: Database, category: "Programming" },
-    { name: "Pandas/NumPy", icon: FileSpreadsheet, category: "Data Processing" },
-    { name: "Scikit-Learn", icon: BrainCircuit, category: "Machine Learning" },
-    { name: "TensorFlow", icon: BrainCircuit, category: "Machine Learning" },
-    { name: "Tableau/PowerBI", icon: BarChart3, category: "Visualization" },
-    { name: "Recharts", icon: LineChart, category: "Visualization" },
-    { name: "Git", icon: GitPullRequest, category: "Tools" }
+    { name: "Python", icon: Code2, category: "Core", proficiency: 95 },
+    { name: "SQL", icon: Database, category: "Core", proficiency: 85 },
+    { name: "PyTorch/TF", icon: BrainCircuit, category: "AI/ML", proficiency: 80 },
+    { name: "Scikit-Learn", icon: Microscope, category: "AI/ML", proficiency: 90 },
+    { name: "Apache Spark", icon: Zap, category: "Big Data", proficiency: 70 },
+    { name: "Plotly/D3.js", icon: BarChart3, category: "Visualization", proficiency: 85 },
+    { name: "Pandas/NumPy", icon: FileSpreadsheet, category: "Core", proficiency: 98 },
+    { name: "Docker/Git", icon: Layers, category: "DevOps", proficiency: 75 }
   ],
 
   projects: [
     {
       id: 1,
-      title: "Movie Dataset Analysis",
-      category: "Data Analysis",
-      description: "Explored a dataset of 80,000+ movies to identify trends in genres, ratings, and revenue over the last century.",
-      tech: ["Python", "Pandas", "Matplotlib", "Seaborn"],
-      highlights: "Discovered a 15% increase in movie production during the streaming era.",
+      title: "Supply Chain Forecasting",
+      category: "Machine Learning",
+      tag: "XGBoost",
+      description: "Optimizing inventory levels using advanced time-series forecasting models.",
+      impact: "Reduced overhead by 15%",
+      tech: ["Python", "XGBoost", "Statsmodels"],
       github: "https://github.com",
       live: "https://demo.com"
     },
     {
       id: 2,
-      title: "Customer Churn Prediction",
-      category: "ML",
-      description: "Developed a Random Forest model to predict customer churn for a telecom company with 92% accuracy.",
-      tech: ["Scikit-Learn", "Python", "XGBoost"],
-      highlights: "Reduced churn by 10% through targeted marketing based on model insights.",
+      title: "Sentiment Analysis Engine",
+      category: "NLP",
+      tag: "Transformer",
+      description: "Real-time analysis of customer feedback using fine-tuned BERT models.",
+      impact: "94% classification accuracy",
+      tech: ["PyTorch", "HuggingFace", "FastAPI"],
       github: "https://github.com"
     },
     {
       id: 3,
-      title: "Stock Market Dashboard",
-      category: "Visualization",
-      description: "Real-time stock market tracker with technical indicators and sentiment analysis from Twitter.",
-      tech: ["React", "D3.js", "Alpha Vantage API"],
-      highlights: "Interactive multi-line charts showing moving averages and RSI.",
-      github: "https://github.com",
-      live: "https://demo.com"
-    },
-    {
-      id: 4,
-      title: "NLP Sentiment Analyzer",
-      category: "ML",
-      description: "A deep learning model using LSTM to classify product reviews into positive, neutral, and negative sentiment.",
-      tech: ["TensorFlow", "Keras", "NLTK"],
-      highlights: "Achieved 89% F1-score on the IMDB reviews dataset.",
+      title: "Traffic Anomaly Detection",
+      category: "Computer Vision",
+      tag: "YOLOv8",
+      description: "Automated identification of traffic violations using real-time video streams.",
+      impact: "Real-time processing at 30 FPS",
+      tech: ["OpenCV", "PyTorch", "CUDA"],
       github: "https://github.com"
     }
   ],
 
   visualizations: {
     skillProficiency: [
-      { subject: 'Python', A: 95, fullMark: 100 },
-      { subject: 'Machine Learning', A: 85, fullMark: 100 },
-      { subject: 'Data Viz', A: 90, fullMark: 100 },
-      { subject: 'SQL', A: 80, fullMark: 100 },
-      { subject: 'Statistics', A: 75, fullMark: 100 },
+      { subject: 'Machine Learning', A: 90, fullMark: 100 },
+      { subject: 'Data Engineering', A: 80, fullMark: 100 },
+      { subject: 'Deep Learning', A: 85, fullMark: 100 },
+      { subject: 'Statistical Analysis', A: 95, fullMark: 100 },
+      { subject: 'Visualization', A: 88, fullMark: 100 },
+      { subject: 'Big Data', A: 75, fullMark: 100 },
     ],
     projectDistribution: [
-      { name: 'Data Analysis', value: 40 },
-      { name: 'Machine Learning', value: 35 },
-      { name: 'Visualization', value: 25 },
+      { name: 'Computer Vision', value: 40 },
+      { name: 'NLP', value: 30 },
+      { name: 'Predictive Modeling', value: 30 },
     ]
   },
 
@@ -107,3 +117,4 @@ export const portfolioData = {
     { icon: Mail, link: "mailto:ahmad@example.com", name: "Email" }
   ]
 };
+
