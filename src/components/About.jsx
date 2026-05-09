@@ -1,6 +1,6 @@
 import React from 'react';
-import {GraduationCap,Award } from 'lucide-react';
-import { portfolioData } from '../data/portfolioData';
+import {GraduationCap,Award} from 'lucide-react';
+import {portfolioData} from '../data/portfolioData';
 
 const About = () => {
   return (
