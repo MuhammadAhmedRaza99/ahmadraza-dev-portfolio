@@ -14,8 +14,10 @@
   --bg-card: rgba(10, 10, 10, 0.7);
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
-  --accent-primary: #a855f7; /* Purple 500 */
-  --accent-secondary: #7e22ce; /* Purple 700 */
+  --accent-primary: #a855f7;
+  /* Purple 500 */
+  --accent-secondary: #7e22ce;
+  /* Purple 700 */
   --accent-glow: rgba(168, 85, 247, 0.25);
   --border-color: rgba(255, 255, 255, 0.05);
   --glass-bg: rgba(255, 255, 255, 0.03);
@@ -51,7 +53,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
+  background-image:
     linear-gradient(rgba(168, 85, 247, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(168, 85, 247, 0.05) 1px, transparent 1px);
   background-size: 60px 60px;
@@ -160,4 +162,3 @@ body::after {
 html {
   scroll-behavior: smooth;
 }
-

@@ -10,8 +10,8 @@ const Hero = () => {
     <section className="min-h-screen flex items-center pt-32 pb-20 relative overflow-hidden" id="hero">
       <div className="container relative z-10">
         <div className="flex flex-col items-center text-center">
-          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass mb-10 animate-fade-in border-purple/20" 
-               style={{ background: 'rgba(168, 85, 247, 0.05)' }}>
+          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full glass mb-10 animate-fade-in border-purple/20"
+            style={{ background: 'rgba(168, 85, 247, 0.05)' }}>
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-purple"></span>
