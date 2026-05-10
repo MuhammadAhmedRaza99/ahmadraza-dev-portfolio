@@ -2,8 +2,8 @@ import React from 'react';
 import {Mail,MapPin,Send} from 'lucide-react';
 import {GithubIcon,LinkedinIcon,TwitterIcon} from './SocialIcons';
 
-const Contact = () => {
-  return (
+const Contact=()=>{
+  return(
     <section id="contact" className="relative py-24">
       <div className="container relative z-10" data-aos="fade-up">
         <div className="flex flex-col items-center mb-20">
@@ -12,7 +12,6 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Info */}
           <div className="space-y-10" data-aos="fade-right">
             <div className="glass-card p-8 flex items-start gap-6 border-purple/10">
               <div className="p-4 rounded-xl bg-purple/10 text-purple">
