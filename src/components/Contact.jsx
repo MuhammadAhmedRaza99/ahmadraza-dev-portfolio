@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, MapPin, Send } from 'lucide-react';
+import {Mail,MapPin,Send } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, TwitterIcon } from './SocialIcons';
 
 const Contact = () => {
