@@ -48,16 +48,14 @@ const Contact=()=>{
                 <input 
                   type="text" 
                   placeholder="John Doe"
-                  className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple focus:ring-1 focus:ring-purple/30 transition-all"
-                />
+                  className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple focus:ring-1 focus:ring-purple/30 transition-all"/>
               </div>
               <div className="space-y-2">
                 <label className="text-xs font-mono uppercase tracking-widest opacity-60">Email</label>
                 <input 
                   type="email" 
                   placeholder="john@example.com"
-                  className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple focus:ring-1 focus:ring-purple/30 transition-all"
-                />
+                  className="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-purple focus:ring-1 focus:ring-purple/30 transition-all"/>
               </div>
             </div>
 
