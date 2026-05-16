@@ -2,7 +2,7 @@ import React from 'react';
 import { GraduationCap, Code2, Database, BrainCircuit, Globe, Award } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
-const About = () => {
+const About=()=>{
   return (
     <section id="about" className="relative py-24 overflow-hidden">
       <div className="container relative z-10">
@@ -87,5 +87,4 @@ const About = () => {
     </section>
   );
 };
-
 export default About;
