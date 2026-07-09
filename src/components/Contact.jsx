@@ -1,6 +1,6 @@
 import React from 'react';
-import { Mail, MapPin, Send } from 'lucide-react';
-import { GithubIcon, LinkedinIcon, TwitterIcon } from './SocialIcons';
+import {Mail,MapPin,Send} from 'lucide-react';
+import {GithubIcon,LinkedinIcon,TwitterIcon} from './SocialIcons';
 
 const infoItems = [
   { icon: Mail,   label: 'Email Me', value: 'ahmad@example.com' },
