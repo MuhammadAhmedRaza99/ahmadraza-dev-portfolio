@@ -12,8 +12,7 @@ const BackgroundOrbs=()=>(
       style={{background:'radial-gradient(circle at 50% 40%, rgba(126,34,206,0.08), transparent 70%)',
       }}/>
     <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-purple-600/10 blur-[120px] animate-pulse" />
-    <div
-      className="absolute -bottom-20 -right-20 w-96 h-96 rounded-full bg-indigo-600/10 blur-[120px] animate-pulse"
+    <div className="absolute -bottom-20 -right-20 w-96 h-96 rounded-full bg-indigo-600/10 blur-[120px] animate-pulse"
       style={{animationDelay:'2s'}}/>
   </div>
 );
