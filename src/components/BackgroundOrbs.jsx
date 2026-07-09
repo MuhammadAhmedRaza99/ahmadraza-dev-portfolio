@@ -14,8 +14,7 @@ const BackgroundOrbs=()=>(
     <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-purple-600/10 blur-[120px] animate-pulse" />
     <div
       className="absolute -bottom-20 -right-20 w-96 h-96 rounded-full bg-indigo-600/10 blur-[120px] animate-pulse"
-      style={{ animationDelay: '2s' }}
-    />
+      style={{animationDelay:'2s'}}/>
   </div>
 );
 export default BackgroundOrbs;
