@@ -14,8 +14,8 @@ const socialLinks = [
 ];
 
 const formFields = [
-  { id: 'name',  label: 'Name',  type: 'text',  placeholder: 'John Doe'          },
-  { id: 'email', label: 'Email', type: 'email', placeholder: 'john@example.com'  },
+  {id:'name',label: 'Name',type:'text',placeholder: 'John Doe'          },
+  {id:'email',label:'Email',type:'email',placeholder: 'john@example.com'  },
 ];
 
 const Contact = () => (
