@@ -3,9 +3,8 @@ import React from 'react';
 const BackgroundOrbs=()=>(
   <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
     <div className="absolute inset-0"
-      style={{ backgroundImage:
-          'linear-gradient(rgba(168,85,247,0.05) 1px, transparent 1px), linear-gradient(90deg,rgba(168,85,247,0.05) 1px, transparent 1px)',
-        backgroundSize: '60px 60px',
+      style={{backgroundImage:'linear-gradient(rgba(168,85,247,0.05) 1px, transparent 1px), linear-gradient(90deg,rgba(168,85,247,0.05) 1px, transparent 1px)',
+        backgroundSize:'60px 60px',
       }}/>
     <div
       className="absolute inset-0"
