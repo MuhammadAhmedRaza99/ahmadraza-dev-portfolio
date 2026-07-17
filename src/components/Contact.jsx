@@ -18,7 +18,7 @@ const formFields = [
   {id:'email',label:'Email',type:'email',placeholder: 'john@example.com'  },
 ];
 
-const Contact = () => (
+const Contact=()=>(
   <section id="contact" className="py-24 relative">
     <div className="max-w-6xl mx-auto px-5 lg:px-10" data-aos="fade-up">
 
