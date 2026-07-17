@@ -10,7 +10,7 @@ const infoItems = [
 const socialLinks = [
   { href: 'https://github.com',Icon: GithubIcon  },
   { href: 'https://linkedin.com',Icon: LinkedinIcon },
-  { href: '#',Icon: TwitterIcon  },
+  // { href: '#',Icon: TwitterIcon  },
 ];
 
 const formFields = [
