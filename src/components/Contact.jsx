@@ -3,8 +3,8 @@ import {Mail,MapPin,Send} from 'lucide-react';
 import {GithubIcon,LinkedinIcon,TwitterIcon} from './SocialIcons';
 
 const infoItems = [
-  { icon: Mail,   label: 'Email Me', value: 'ahmad@example.com' },
-  { icon: MapPin, label: 'Location', value: 'Karachi, Pakistan' },
+  { icon: Mail,label:'Email Me', value:'ahmad@example.com' },
+  { icon: MapPin,label:'Location', value:'Karachi, Pakistan' },
 ];
 
 const socialLinks = [
