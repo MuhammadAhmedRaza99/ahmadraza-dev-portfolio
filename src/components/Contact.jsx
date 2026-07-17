@@ -76,16 +76,14 @@ const Contact=()=>(
               <div key={id} className="space-y-1.5">
                 <label
                   htmlFor={id}
-                  className="block text-[10px] font-mono uppercase tracking-[0.2em] text-white/40"
-                >
+                  className="block text-[10px] font-mono uppercase tracking-[0.2em] text-white/40" >
                   {label}
                 </label>
                 <input
                   id={id}
                   type={type}
                   placeholder={placeholder}
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-purple-500/50 focus:ring-1 focus:ring-purple-500/20 transition-all"
-                />
+                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white text-sm placeholder:text-white/30 focus:outline-none focus:border-purple-500/50 focus:ring-1 focus:ring-purple-500/20 transition-all" />
               </div>
             ))}
           </div>
@@ -93,8 +91,7 @@ const Contact=()=>(
           <div className="space-y-1.5">
             <label
               htmlFor="message"
-              className="block text-[10px] font-mono uppercase tracking-[0.2em] text-white/40"
-            >
+              className="block text-[10px] font-mono uppercase tracking-[0.2em] text-white/40" >
               Message
             </label>
             <textarea
