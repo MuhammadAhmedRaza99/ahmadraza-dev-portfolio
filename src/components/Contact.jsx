@@ -29,8 +29,7 @@ const Contact=()=>(
         </span>
         <h2
           className="font-black text-center text-white"
-          style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontFamily: "'Outfit', sans-serif" }}
-        >
+          style={{ fontSize: 'clamp(2rem, 5vw, 3rem)',fontFamily:"'Outfit',sans-serif"}}>
           Let's Build Something
         </h2>
       </div>
