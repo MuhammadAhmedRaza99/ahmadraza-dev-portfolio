@@ -110,13 +110,11 @@ const Contact = () => (
 
           <button
             type="submit"
-            className="w-full flex items-center justify-center gap-2 bg-purple-500 hover:bg-purple-700 text-white font-bold py-4 rounded-xl transition-all duration-300 shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:shadow-[0_0_35px_rgba(168,85,247,0.6)] hover:scale-[1.02]"
-          >
+            className="w-full flex items-center justify-center gap-2 bg-purple-500 hover:bg-purple-700 text-white font-bold py-4 rounded-xl transition-all duration-300 shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:shadow-[0_0_35px_rgba(168,85,247,0.6)] hover:scale-[1.02]">
             Send Message <Send size={18} />
           </button>
 
         </form>
-
       </div>
     </div>
   </section>
