@@ -42,8 +42,7 @@ const Contact=()=>(
           {infoItems.map(({ icon: Icon, label, value }) => (
             <div
               key={label}
-              className="flex items-start gap-5 p-6 rounded-2xl backdrop-blur-xl bg-black/60 border border-white/5"
-            >
+              className="flex items-start gap-5 p-6 rounded-2xl backdrop-blur-xl bg-black/60 border border-white/5">
               <div className="p-3 rounded-xl bg-purple-500/10 text-purple-400">
                 <Icon size={22} />
               </div>
@@ -62,8 +61,7 @@ const Contact=()=>(
                 href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="w-11 h-11 flex items-center justify-center rounded-xl backdrop-blur-md bg-white/[0.03] border border-white/10 text-white hover:border-purple-500/50 hover:text-purple-400 transition-all duration-200"
-              >
+                className="w-11 h-11 flex items-center justify-center rounded-xl backdrop-blur-md bg-white/[0.03] border border-white/10 text-white hover:border-purple-500/50 hover:text-purple-400 transition-all duration-200">
                 <Icon size={20} />
               </a>
             ))}
